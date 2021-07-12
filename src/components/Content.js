@@ -1,16 +1,20 @@
 import React from 'react'
 import './Content.css';
+import Experiment1 from './subcontent/Experiments/Experiment1';
+import IO1 from './subcontent/IObars/IO1';
 
 const Content = () => {
     return (
         <div className="content">
-            <h2>IV characteristics of PN diode</h2>
-            <img src="https://qphs.fs.quoracdn.net/main-qimg-d17ccb8be0a976299e08d98fb6c94d6d"></img>
-            <p>The IV curve of a solar cell is the superposition of the IV curve of the solar cell
-                diode in the dark with the light-generated current.1 The light has the effect of shifting
-                the IV curve down into the fourth quadrant where power can be extracted from the diode.
-                Illuminating a cell adds to the normal "dark" currents in the diode so that the diode law becomes.
-            </p>
+
+
+            <Experiment1 />
+            <IO1 />
+            <Experiment1 />
+            <IO1 />
+            <Experiment1 />
+            <IO1 />
+
         </div>
     )
 }
