@@ -8,8 +8,11 @@ const Webpage = () => {
     return (
         <div className="webpage">
             <Navbar />
-            <ExperimentBar />
-            <Content />
+            <div className="flex-container">
+                <ExperimentBar />
+                <Content />
+            </div>
+
         </div>
     )
 }
