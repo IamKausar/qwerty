@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+.heading{
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1rem;
+    color: honeydew;
+}
+
 .navbar{
     border: 3px solid purple;
-    background-color: #047857;
+    background-color: #000000f1;
     height : 7rem;
 }

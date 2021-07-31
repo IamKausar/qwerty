@@ -8,18 +8,19 @@ const IO1 = () => {
         let [output, setOutput] = useState(0);
 
         function Calculate(input1, input2) {
-            let k = input1 * input2;
-            setOutput(k);
+            let k = (input1 / 0.026);
+            let Id = ((2.718 ** k) - 1) * input2;
+            setOutput(Id);
         }
         useEffect(() => {
             Calculate(input1, input2);
-        }, [input2])
+        }, [input2, input1])
 
         return (
             <div className="Input">
                 <form>
                     <label>
-                        Input 1:
+                        Vd :
                         <input type="number" name="Input1"
                             onChange={
                                 e => {
@@ -30,7 +31,7 @@ const IO1 = () => {
                     </label>
                     <br></br>
                     <label>
-                        Input 2:
+                        Is :
                         <input type="number" name="Input2" onChange={
                             e => {
                                 setInput2(e.target.value);
